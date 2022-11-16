@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "markdown-it": "13.0.1"
+    "markdown-it": "13.0.1",
+    "punycode": "^2.1.1"
   }
 }

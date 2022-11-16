@@ -2,7 +2,11 @@
 import './style.css';
 import markdownIt from 'markdown-it';
 
-let noteUrl = 'https://cdn.jsdelivr.net/gh/wailwinphyo/md-test@main/notes.md'; //'https://github.com/wailwinphyo/md-test/main/notes.md';
+let noteUrl =
+  'https://raw.githubusercontent.com/wailwinphyo/md-test/main/notes.md?raw';
+//'https://cdn.jsdelivr.net/gh/wailwinphyo/md-test@main/notes.md';
+//'https://github.com/wailwinphyo/md-test/main/notes.md';
+
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 console.log(new markdownIt().render('#hello'));
