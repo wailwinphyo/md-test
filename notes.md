@@ -2,7 +2,7 @@
 
 no api for dislike 
 
-# checklike null => video-view.component.ts > line 217 null error 
+-[ ] checklike null => video-view.component.ts > line 217 null error 
 
 -[x] fup and collect default to 0 instead of null
 
