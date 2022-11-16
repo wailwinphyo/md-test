@@ -2,17 +2,11 @@
 import './style.css';
 import markdownIt from 'markdown-it';
 
-let noteUrl = './nodes.md';
+let noteUrl = 'https://cdn.jsdelivr.net/gh/wailwinphyo/md-test@main/notes.md'; //'https://github.com/wailwinphyo/md-test/main/notes.md';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
+console.log(new markdownIt().render('#hello'));
 
 fetch(noteUrl)
-  .then((r) => {
-    console.log(r);
-    return r;
-  })
-  .then((r) => {
-    console.log(r);
-    return r.text();
-  })
-  .then((t) => (appDiv.innerHTML = 'hello' + t));
+  .then((r) => r.text())
+  .then((t) => (appDiv.innerHTML = t));
