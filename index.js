@@ -13,4 +13,4 @@ console.log(new markdownIt().render('#hello'));
 
 fetch(noteUrl)
   .then((r) => r.text())
-  .then((t) => (appDiv.innerHTML = t));
+  .then((t) => (appDiv.innerHTML = markdownIt().render(t)));
